@@ -1,4 +1,4 @@
-
+package dxc.com.jira.soft.dashboard.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

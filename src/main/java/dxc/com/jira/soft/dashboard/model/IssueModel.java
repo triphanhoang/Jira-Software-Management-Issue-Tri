@@ -35,15 +35,11 @@ public class IssueModel {
 	@Column(name="Priority")
 	private String priority;
 	
-	@OneToOne
-	@JoinColumn(name="EmployeeID")
-	private Employee employee;
 	
 	public IssueModel() {
 	}
 
-	public IssueModel(Long issueId, String issueName, Project project, String status, String description, String priority,
-			Employee employee) {
+	public IssueModel(Long issueId, String issueName, Project project, String status, String description, String priority) {
 		super();
 		this.issueId = issueId;
 		this.issueName = issueName;
@@ -51,7 +47,7 @@ public class IssueModel {
 		this.status = status;
 		this.description = description;
 		this.priority = priority;
-		this.employee = employee;
+		
 	}
 
 	public Long getIssueId() {
@@ -102,16 +98,10 @@ public class IssueModel {
 		this.project = project;
 	}
 
-	public Employee getEmployee() {
-		return employee;
-	}
-
-	public void setEmployee(Employee employee) {
-		this.employee = employee;
-	}
+	
 	@Override
 	public String toString() {
 		return "Issue [issueId=" + issueId + ", issueName=" + issueName + ", project=" + project + ", status=" + status
-				+ ", description=" + description + ", priority=" + priority + ", employee=" + employee + "]";
+				+ ", description=" + description + ", priority=" + priority + ", employee=" + "]";
 	}
 }

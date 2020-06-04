@@ -19,3 +19,7 @@ body {
 	border-color: #FF0000;
 	margin-bottom: 10px;	
 }
+.namepriority,.total{
+	background: yellow;
+  color: red;
+}
