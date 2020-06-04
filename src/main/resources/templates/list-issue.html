@@ -28,14 +28,10 @@
                         </li>
                     </ul>
                     
-                    <form class="form-inline my-2 my-lg-0" action="#" th:action="@{/issue/search}" method="get">
-                        <input class="form-control mr-sm-2" th:name ="issueId" id="issueId" type="text" placeholder="Search by ID ..." aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    
                 </div>
-                <button class="btn btn-load btn-primary" type="button" onlick="loadTrang()">
- 							 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
- 										 Loading Data
+                <button class="btn btn-load btn-primary" type="button">
+ 							 Loading Data
 				</button>
             </nav>
         </div>
@@ -48,7 +44,7 @@
             <th:block th:unless="${#lists.isEmpty(dataIssue)}">
                 <div class="table-responsive">
                     <h5>List of Issue</h5>
-                    <table class="table  table-striped table-hover">
+                    <table id="example" class="table table-striped table-hover">
                         <thead>
                             <tr>
                                 <th>#</th>

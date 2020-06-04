@@ -23,3 +23,21 @@ body {
 	background: yellow;
   color: red;
 }
+.table-responsive{
+	overflow-x: visible !important;
+} 
+.btn-load{
+	margin-left: 240px;
+}
+
+.dataTables_filter {
+	 position: absolute;
+    top: -100px;
+    z-index: 99;
+    left: -220px;
+}
+@media only screen and (max-width: 600px) {
+  dataTables_filter {
+	 left: -133px;
+}
+}

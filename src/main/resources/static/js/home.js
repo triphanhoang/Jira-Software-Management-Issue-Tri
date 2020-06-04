@@ -1,5 +1,26 @@
 $(document).ready(function(){
-
+	$('#example').dataTable( {
+	      "language": {
+	      "sProcessing":   "processing...",
+	      "sLengthMenu":   "View _MENU_ items",
+	      "sZeroRecords":  "Not found row",
+	      "sInfo":         "Viewing _START_ to _END_ in sum _TOTAL_ items",
+	      "sInfoEmpty":    "views 0 to 0 in sum 0 items",
+	      "sInfoFiltered": "(can't filter _MAX_ items)",
+	      "sInfoPostFix":  "",
+	      "sSearch":       "",
+	      "sUrl":          "",
+	      "oPaginate": {
+	          "sFirst":    "First",
+	          "sPrevious": "Previous",
+	          "sNext":     "Next",
+	          "sLast":     "End"
+	          }
+	      },	
+	      "processing": true, 
+	      "aLengthMenu": [[5, 10, 20, 50], [5, 10, 20, 50]], 
+	      "order": [[ 1, 'desc' ]] 
+	  } );
 	$('#our_table').find('td').each(function () {
 	
 		$(this).click();
