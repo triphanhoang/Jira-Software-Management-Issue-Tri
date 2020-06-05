@@ -7,9 +7,6 @@ $(document).ready(function(){
 	      "sInfo":         "Viewing _START_ to _END_ in sum _TOTAL_ items",
 	      "sInfoEmpty":    "views 0 to 0 in sum 0 items",
 	      "sInfoFiltered": "(can't filter _MAX_ items)",
-	      "sInfoPostFix":  "",
-	      "sSearch":       "",
-	      "sUrl":          "",
 	      "oPaginate": {
 	          "sFirst":    "First",
 	          "sPrevious": "Previous",

@@ -53,11 +53,10 @@ public class IssueController {
 			model.addAttribute("dataIssueNameCategory",listNameCategory);
 			
 			//show In-Complete Table
-			model.addAttribute("dataINComplete", listComplete);
-			model.addAttribute("dataIssueINCategory", listCategory);
-			model.addAttribute("dataIssueNameCategory",listNameCategory);
-			model.addAttribute("dataListInCategory",listInCategory);
 			
+			model.addAttribute("dataIssueINCategory", listInComplete);		
+			model.addAttribute("dataListInCategory",listInCategory);
+			model.addAttribute("dataIssueNameCategory",listNameCategory);
 
 			return "list-issue-type";
 		}
